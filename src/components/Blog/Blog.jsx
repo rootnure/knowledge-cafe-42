@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
-const Blog = ( {blog} ) => {
-    const {title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
+import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs'
+
+const Blog = ({ blog, handleBookmark }) => {
+    const {id, title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
+    let isBookmarked = true;
 
     const days = parseInt((new Date() - new Date(posted_date)) / (1000*60*60*24));
     const posted = days > 100 ? 'Long Time Ago' : days > 30 ? parseInt(days/30) + 'month(s) ago' : days > 2 ? days + ' days ago' : days > 1 ? 'Yesterday' : 'Today';
 
     return (
-        <div className='mb-8'>
-            <img className='w-full' src={cover_img} alt={title + ' cover image'} />
+        <div className='mb-14'>
+            <img className='w-full rounded-xl' src={cover_img} alt={title + ' cover image'} />
             <div className='flex justify-between items-center py-2'>
                 <div className='flex items-center gap-x-4'>
                     <img className='w-14' src={author_img} alt="" />
@@ -16,8 +19,18 @@ const Blog = ( {blog} ) => {
                         <p>{posted_date} ({posted})</p>
                     </div>
                 </div>
-                <div>
+                <div className='flex gap-x-2 items-center'>
                     <p>{reading_time} mins read</p>
+                    <p
+                        onClick={() => handleBookmark(id)}
+                        title='Click to bookmark' 
+                        className='text-gray-500 cursor-pointer'>       
+                            {isBookmarked ? 
+                            <span className='text-purple-600'>
+                                <BsFillBookmarkFill></BsFillBookmarkFill>
+                            </span> : 
+                            <BsBookmark></BsBookmark>}
+                    </p>
                 </div>
             </div>
             <h2 className="text-4xl font-bold">{title}</h2>
@@ -26,12 +39,14 @@ const Blog = ( {blog} ) => {
                     hashtags.map((tag, idx) => <span className='me-2' key={blog.id + idx}><a href="">#{tag}</a></span>)
                 }
             </p>
+            <button className='text-blue-600 underline font-semibold text-md' href="">Mark As Read</button>
         </div>
     );
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookmark: PropTypes.func.isRequired
 }
 
 export default Blog;

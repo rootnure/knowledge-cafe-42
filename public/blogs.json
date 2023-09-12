@@ -1,0 +1,142 @@
+[
+    {
+        "id": "AbCdEfG",
+        "cover_img": "https://i.ibb.co/PT5knWB/1.jpg",
+        "title": "The Secret of Starlight",
+        "author": "Jane Doe",
+        "author_img": "https://i.ibb.co/M8VHD6r/boy1.png",
+        "posted_date": "2023-09-12",
+        "reading_time": 12,
+        "hashtags": [
+            "SciFi",
+            "Adventure",
+            "Mystery"
+        ]
+    },
+    {
+        "id": "HhIiJjK",
+        "cover_img": "https://i.ibb.co/y4knjyr/2.png",
+        "title": "Hidden Treasures of Atlantis",
+        "author": "John Smith",
+        "author_img": "https://i.ibb.co/jycgNLy/boy2.jpg",
+        "posted_date": "2023-09-11",
+        "reading_time": 20,
+        "hashtags": [
+            "Adventure",
+            "Fantasy",
+            "Mythology"
+        ]
+    },
+    {
+        "id": "LmNoPqR",
+        "cover_img": "https://i.ibb.co/QphGBN1/3.png",
+        "title": "Whispers in the Woods",
+        "author": "Emily White",
+        "author_img": "https://i.ibb.co/DRB9Mdy/girl1.jpg",
+        "posted_date": "2023-09-10",
+        "reading_time": 15,
+        "hashtags": [
+            "Mystery",
+            "Horror",
+            "Suspense"
+        ]
+    },
+    {
+        "id": "StUvWxY",
+        "cover_img": "https://i.ibb.co/j4JxmKj/4.jpg",
+        "title": "A Journey Through Time",
+        "author": "David Brown",
+        "author_img": "https://i.ibb.co/jD79rY6/girl2.jpg",
+        "posted_date": "2023-09-09",
+        "reading_time": 18,
+        "hashtags": [
+            "TimeTravel",
+            "Adventure",
+            "History"
+        ]
+    },
+    {
+        "id": "ZaBcDeF",
+        "cover_img": "https://i.ibb.co/PT5knWB/1.jpg",
+        "title": "Enchanted Dreams",
+        "author": "Sarah Johnson",
+        "author_img": "https://i.ibb.co/M8VHD6r/boy1.png",
+        "posted_date": "2023-09-08",
+        "reading_time": 10,
+        "hashtags": [
+            "Fantasy",
+            "Romance",
+            "Magic"
+        ]
+    },
+    {
+        "id": "GhIjKlM",
+        "cover_img": "https://i.ibb.co/y4knjyr/2.png",
+        "title": "Lost in the Jungle",
+        "author": "Michael Smith",
+        "author_img": "https://i.ibb.co/jycgNLy/boy2.jpg",
+        "posted_date": "2023-09-07",
+        "reading_time": 25,
+        "hashtags": [
+            "Adventure",
+            "Survival",
+            "Nature"
+        ]
+    },
+    {
+        "id": "NpQrStU",
+        "cover_img": "https://i.ibb.co/QphGBN1/3.png",
+        "title": "In Search of the Unknown",
+        "author": "Ella Green",
+        "author_img": "https://i.ibb.co/DRB9Mdy/girl1.jpg",
+        "posted_date": "2023-09-06",
+        "reading_time": 14,
+        "hashtags": [
+            "Mystery",
+            "Exploration",
+            "Discovery"
+        ]
+    },
+    {
+        "id": "VwXyZaB",
+        "cover_img": "https://i.ibb.co/j4JxmKj/4.jpg",
+        "title": "The Alchemist's Quest",
+        "author": "Samuel Clark",
+        "author_img": "https://i.ibb.co/jD79rY6/girl2.jpg",
+        "posted_date": "2023-09-05",
+        "reading_time": 22,
+        "hashtags": [
+            "Fantasy",
+            "Alchemy",
+            "Adventure"
+        ]
+    },
+    {
+        "id": "CdEfGhI",
+        "cover_img": "https://i.ibb.co/PT5knWB/1.jpg",
+        "title": "City of Lights",
+        "author": "Lily Anderson",
+        "author_img": "https://i.ibb.co/M8VHD6r/boy1.png",
+        "posted_date": "2023-09-04",
+        "reading_time": 16,
+        "hashtags": [
+            "Romance",
+            "Urban",
+            "Love"
+        ]
+    },
+    {
+        "id": "JkLmNoP",
+        "cover_img": "https://i.ibb.co/y4knjyr/2.png",
+        "title": "The Haunting of Hollow Manor",
+        "author": "William Johnson",
+        "author_img": "https://i.ibb.co/jycgNLy/boy2.jpg",
+        "posted_date": "2023-09-03",
+        "reading_time": 19,
+        "hashtags": [
+            "Horror",
+            "Mystery",
+            "Ghosts"
+        ]
+    }
+]

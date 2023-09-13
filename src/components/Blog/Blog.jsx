@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs'
 
 const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
-    const {title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
+    const {id, title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
     let isBookmarked = false;
 
     const days = parseInt((new Date() - new Date(posted_date)) / (1000*60*60*24));
@@ -39,7 +39,7 @@ const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
                     hashtags.map((tag, idx) => <span className='me-2' key={blog.id + idx}><a href="">#{tag}</a></span>)
                 }
             </p>
-            <button onClick={() => handleMarkAsRead(reading_time)} className='text-blue-600 underline font-semibold text-md' href="">Mark As Read</button>
+            <button onClick={() => handleMarkAsRead(id, reading_time)} className='text-blue-600 underline font-semibold text-md' href="">Mark As Read</button>
         </div>
     );
 };

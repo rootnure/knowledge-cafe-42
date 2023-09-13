@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs'
 
-const Blog = ({ blog, handleAddToBookmark }) => {
+const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
     const {title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
     let isBookmarked = false;
 
@@ -9,7 +9,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
     const posted = days > 100 ? 'Long Time Ago' : days > 30 ? parseInt(days/30) + 'month(s) ago' : days > 2 ? days + ' days ago' : days > 1 ? 'Yesterday' : 'Today';
 
     return (
-        <div className='mb-14'>
+        <div className='mb-14 space-y-2'>
             <img className='w-full rounded-xl' src={cover_img} alt={title + ' cover image'} />
             <div className='flex justify-between items-center py-2'>
                 <div className='flex items-center gap-x-4'>
@@ -39,14 +39,15 @@ const Blog = ({ blog, handleAddToBookmark }) => {
                     hashtags.map((tag, idx) => <span className='me-2' key={blog.id + idx}><a href="">#{tag}</a></span>)
                 }
             </p>
-            <button className='text-blue-600 underline font-semibold text-md' href="">Mark As Read</button>
+            <button onClick={() => handleMarkAsRead(reading_time)} className='text-blue-600 underline font-semibold text-md' href="">Mark As Read</button>
         </div>
     );
 };
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleAddToBookmark: PropTypes.func.isRequired
+    handleAddToBookmark: PropTypes.func.isRequired,
+    handleMarkAsRead: PropTypes.func.isRequired
 }
 
 export default Blog;

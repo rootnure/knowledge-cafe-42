@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({handleAddToBookmark}) => {
+const Blogs = ({handleAddToBookmark, handleMarkAsRead}) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -12,13 +12,14 @@ const Blogs = ({handleAddToBookmark}) => {
     }, []);
 
     return (
-        <section className='md:col-span-2 border border-blue-400 rounded'>
-            {/* <h2 className="text-2xl">Blogs: {blogs.length}</h2> */}
+        <section className='md:col-span-2 rounded'>
+            {/* <h2 className="text-3xl font-bold">Blogs: {blogs.length}</h2> */}
             {
                 blogs.map(blog => <Blog
                     key={blog.id}
                     blog={blog}
                     handleAddToBookmark={handleAddToBookmark}
+                    handleMarkAsRead={handleMarkAsRead}
                 ></Blog>)
             }
         </section>
@@ -26,7 +27,8 @@ const Blogs = ({handleAddToBookmark}) => {
 };
 
 Blogs.propTypes = {
-    handleAddToBookmark: PropTypes.func.isRequired
+    handleAddToBookmark: PropTypes.func.isRequired,
+    handleMarkAsRead: PropTypes.func.isRequired
 }
 
 export default Blogs;

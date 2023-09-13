@@ -2,7 +2,7 @@
     {
         "id": "AbCdEfG",
         "cover_img": "https://i.ibb.co/PT5knWB/1.jpg",
-        "title": "The Secret of Starlight",
+        "title": "ES6 JavaScript: Top 10 Featured of ES6",
         "author": "Jane Doe",
         "author_img": "https://i.ibb.co/M8VHD6r/boy1.png",
         "posted_date": "2023-09-12",
@@ -16,7 +16,7 @@
     {
         "id": "HhIiJjK",
         "cover_img": "https://i.ibb.co/y4knjyr/2.png",
-        "title": "Hidden Treasures of Atlantis",
+        "title": "Hidden Treasures of VS Code",
         "author": "John Smith",
         "author_img": "https://i.ibb.co/jycgNLy/boy2.jpg",
         "posted_date": "2023-09-11",
@@ -30,7 +30,7 @@
     {
         "id": "LmNoPqR",
         "cover_img": "https://i.ibb.co/QphGBN1/3.png",
-        "title": "Whispers in the Woods",
+        "title": "Whispers of React wit JavaScript",
         "author": "Emily White",
         "author_img": "https://i.ibb.co/DRB9Mdy/girl1.jpg",
         "posted_date": "2023-09-10",
@@ -44,7 +44,7 @@
     {
         "id": "StUvWxY",
         "cover_img": "https://i.ibb.co/j4JxmKj/4.jpg",
-        "title": "A Journey Through Time",
+        "title": "A Journey Through Web Development",
         "author": "David Brown",
         "author_img": "https://i.ibb.co/jD79rY6/girl2.jpg",
         "posted_date": "2023-09-09",

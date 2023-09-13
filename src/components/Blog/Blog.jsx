@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs'
 
-const Blog = ({ blog, handleBookmark }) => {
-    const {id, title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
-    let isBookmarked = true;
+const Blog = ({ blog, handleAddToBookmark }) => {
+    const {title, cover_img, author, author_img, reading_time, posted_date, hashtags} = blog;
+    let isBookmarked = false;
 
     const days = parseInt((new Date() - new Date(posted_date)) / (1000*60*60*24));
     const posted = days > 100 ? 'Long Time Ago' : days > 30 ? parseInt(days/30) + 'month(s) ago' : days > 2 ? days + ' days ago' : days > 1 ? 'Yesterday' : 'Today';
@@ -22,11 +22,11 @@ const Blog = ({ blog, handleBookmark }) => {
                 <div className='flex gap-x-2 items-center'>
                     <p>{reading_time} mins read</p>
                     <p
-                        onClick={() => handleBookmark(id)}
+                        onClick={() => handleAddToBookmark(blog)}
                         title='Click to bookmark' 
                         className='text-gray-500 cursor-pointer'>       
                             {isBookmarked ? 
-                            <span className='text-purple-600'>
+                            <span className='text-blue-400'>
                                 <BsFillBookmarkFill></BsFillBookmarkFill>
                             </span> : 
                             <BsBookmark></BsBookmark>}
@@ -46,7 +46,7 @@ const Blog = ({ blog, handleBookmark }) => {
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleBookmark: PropTypes.func.isRequired
+    handleAddToBookmark: PropTypes.func.isRequired
 }
 
 export default Blog;
